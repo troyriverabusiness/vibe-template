@@ -10,7 +10,7 @@ COPY pyproject.toml ./
 COPY main.py ./
 
 # Install dependencies
-RUN uv sync --frozen
+RUN uv sync 
 
 # Run the application
 CMD ["uv", "run", "python", "main.py"]
