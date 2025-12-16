@@ -12,6 +12,8 @@ COPY main.py ./
 # Install dependencies
 RUN uv sync 
 
+COPY . /app/
+
 # Run the application
 CMD ["uv", "run", "python", "main.py"]
 
