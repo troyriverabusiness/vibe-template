@@ -1,46 +1,39 @@
-# Client Development
+# Developing with Vite, React, TypeScript, and shadcn/ui
+
+This project is set up with [Vite](https://vitejs.dev/) for fast development, [React](https://react.dev/) with [TypeScript](https://www.typescriptlang.org/), and [shadcn/ui](https://ui.shadcn.com/) for high-quality UI components.
 
 ## Getting Started
 
-This client directory is set up to use [Vite](https://vitejs.dev/) for fast development and building.
-
-### Creating a New Vite App
-
-To create a new Vite application in this directory:
-
-```bash
-npm create vite@latest .
-```
-
-When prompted:
-- **Select a framework**: Choose your preferred framework (React, Vue, Svelte, etc.)
-- **Select a variant**: Choose TypeScript or JavaScript
-- **Project name**: Use `.` to create the app in the current directory
-
-Alternatively, you can specify everything in one command:
-
-```bash
-npm create vite@latest . -- --template react-ts
-```
-
-### After Creating the App
-
-1. Install dependencies:
+1. **Install dependencies:**
    ```bash
    npm install
    ```
 
-2. Start the development server:
+2. **Start the development server:**
    ```bash
    npm run dev
    ```
 
-3. Build for production:
+3. **Build for production:**
    ```bash
    npm run build
    ```
 
-### Docker
+## Using shadcn/ui Components
 
-The Dockerfile is configured to build and serve your Vite app. The default port is 3000, which matches the compose.yaml configuration.
+- To add a new component from shadcn/ui, run:
+  ```bash
+  npx shadcn-ui@latest add <component>
+  ```
+  Replace `<component>` with the name of the component you want (e.g., `button`, `input`).  
+  For a list of available components, visit the [shadcn/ui docs](https://ui.shadcn.com/docs/components).
+
+- Components will be added to your project under the `components/` directory. You can then import and use them in your React code.
+
+## Resources
+
+- [Vite Documentation](https://vitejs.dev/guide/)
+- [shadcn/ui Documentation](https://ui.shadcn.com/docs)
+- [React Documentation](https://react.dev/)
+- [TypeScript Handbook](https://www.typescriptlang.org/docs/)
 
